@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1083965398382",
+    "project_id": "loginregister-3ff64",
+    "storage_bucket": "loginregister-3ff64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083965398382:android:e3b1607d181b22342cf57f",
+        "android_client_info": {
+          "package_name": "com.sinche.victor.loginyregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083965398382-8t9fj0reon8v83g8jp29505tp0tpvrif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sinche.victor.loginyregister",
+            "certificate_hash": "bb0dac74d321e14367719b6291afa1666e445d75"
+          }
+        },
+        {
+          "client_id": "1083965398382-lu89pb44q2j2stgh55e2gd7qj0a5md5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2msx1c12095CxYN424juNxoncq1bgxB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083965398382-lu89pb44q2j2stgh55e2gd7qj0a5md5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083965398382:android:5dcebe95e8c234fe2cf57f",
+        "android_client_info": {
+          "package_name": "com.sinche.victor.sprint01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083965398382-lu89pb44q2j2stgh55e2gd7qj0a5md5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2msx1c12095CxYN424juNxoncq1bgxB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083965398382-lu89pb44q2j2stgh55e2gd7qj0a5md5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
