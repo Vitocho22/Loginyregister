@@ -50,6 +50,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:indeterminate="true"/>
+
                     <ImageView
                         android:layout_width="210dp"
                         android:layout_height="150dp"
@@ -80,7 +88,7 @@
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/edittext_email"
+                        android:id="@+id/txt_email"
                         style="@style/EditTextGeneral"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -102,7 +110,7 @@
 
 
                     <EditText
-                        android:id="@+id/edittext_password"
+                        android:id="@+id/txt_password"
                         style="@style/EditTextGeneral"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -132,7 +140,7 @@
                         android:layout_height="wrap_content"/>
 
                     <Button
-                        android:id="@+id/btn_login"
+                        android:onClick="btn_login"
                         android:layout_marginTop="30dp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
@@ -151,6 +159,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/forgotpassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAlignment="textEnd"
@@ -159,7 +168,8 @@
                         android:text="@string/olvidaste_contrasena"
                         android:textColor="@color/green"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="OnClick" />
 
 
                     <LinearLayout

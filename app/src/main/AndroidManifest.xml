@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginsandRegisterDesignXML"
         tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBj9sbhzdL6sOT2_Hs5RqvBD9k0Obv-9r0"
+            />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false"

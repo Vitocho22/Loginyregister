@@ -89,7 +89,7 @@ class RegisterActivity : AppCompatActivity() {
             }
     }
     fun ViewLogin(view: View) {
-        val i = Intent(this, MainActivity::class.java)
+        val i = Intent(this, LoginActivity::class.java)
         startActivity(i)
     }
 }
