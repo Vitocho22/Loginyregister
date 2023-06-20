@@ -31,26 +31,47 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, OnMapClickListener
         mMap = googleMap
         mMap!!.setOnMapClickListener(this)
         mMap!!.setOnMapLongClickListener(this)
-        val mexico = LatLng(19.8077463, -99.4077038)
-        mMap!!.addMarker(MarkerOptions().position(mexico).title("México"))
-        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(mexico))
+        val peru = LatLng(-12.044532528471509, -76.96179563403719)
+        //mMap!!.addMarker(MarkerOptions().position(peru).title("tu vieja"))
+        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(peru))
+        agregarMarcadoresAdicionales()
     }
 
     override fun onMapClick(latLng: LatLng) {
         txtLatitud!!.setText(latLng.latitude.toString())
         txtLongitud!!.setText(latLng.longitude.toString())
         mMap!!.clear()
-        val mexico = LatLng(latLng.latitude, latLng.longitude)
-        mMap!!.addMarker(MarkerOptions().position(mexico).title(""))
-        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(mexico))
+        val peru = LatLng(latLng.latitude, latLng.longitude)
+        //mMap!!.addMarker(MarkerOptions().position(peru).title(""))
+        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(peru))
     }
 
     override fun onMapLongClick(latLng: LatLng) {
         txtLatitud!!.setText(latLng.latitude.toString())
         txtLongitud!!.setText(latLng.longitude.toString())
         mMap!!.clear()
-        val mexico = LatLng(latLng.latitude, latLng.longitude)
-        mMap!!.addMarker(MarkerOptions().position(mexico).title(""))
-        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(mexico))
+        val peru = LatLng(latLng.latitude, latLng.longitude)
+        //mMap!!.addMarker(MarkerOptions().position(peru).title(""))
+        mMap!!.moveCamera(CameraUpdateFactory.newLatLng(peru))
+    }
+    private fun agregarMarcadoresAdicionales() {
+        val coordenadas1 = LatLng(-12.0455679,-76.9534466)
+        mMap?.addMarker(MarkerOptions().position(coordenadas1).title("Buen sabor"))
+
+        val coordenadas2 = LatLng(-12.045342075454162, -76.95363342761993)
+        mMap?.addMarker(MarkerOptions().position(coordenadas2).title("restaurante calle 6"))
+
+        // Agrega más marcadores de coordenadas según tus necesidades
     }
 }
+
+
+
+
+
+
+
+
+
+
+
